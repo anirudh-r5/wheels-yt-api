@@ -1,0 +1,26 @@
+{
+  "name": "wheels-yt-api",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"build": "tsc",
+	"build:watch": "tsc --watch",
+    "dev": "concurrently -n \"TSC,NPM\" -c \"bgBlue.bold,bgGreen.bold\" \"npm:build:watch\" \"node --watch dist/index.js\"",
+    "lint": "eslint . --cache"
+  },
+  "author": "anirudh-r5",
+  "license": "GPL-3.0-only",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@types/eslint__js": "^8.42.3",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "3.3.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.12.0"
+  }
+}
